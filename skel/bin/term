@@ -1,0 +1,2 @@
+#!/bin/bash
+exo-open --launch TerminalEmulator > /dev/null 2> /dev/null

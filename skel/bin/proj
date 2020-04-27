@@ -1,0 +1,150 @@
+#!/usr/bin/python3
+from sys import argv as args, stderr as e, exit
+from yaml import safe_load as yml
+from os import popen, system, environ as env
+args = args[1:]
+
+if '-h' in args or '--help' in args:
+    print('\n',r'''
+Proj tool
+---------
+
+ proj [OPTIONS] [<project>[/<subdirectory>]]
+
+Usage:
+---------
+
+ <project>             Show project directory.
+
+ -h, --help            Show this message.
+
+ -l, --list            Show the project list.
+
+ -c, --create          To create a new project.
+  └── [job|proj|lscr|book|test] <name>
+
+ -d, --delete          To delete a project.
+  └── <name>
+
+ -r, --run             Run a command with project
+  └── <cmd> <project>  folder as argument.
+    '''.strip(),sep='', end='\n\n')
+    exit(0)
+
+try:
+    projdir = yml(open(f'{env["HOME"]}/.config/proj.yml').read())['dir']
+except FileNotFoundError or KeyError:
+    projdir = '$HOME/Create'
+    system(f'mkdir "{projdir}"')
+
+cmd = ''
+ign = None
+categories = {
+    'p': 'Projects',
+    'j': 'Jobs',
+    'l': 'LitleScripts',
+    'b': 'Books',
+    't': 'Tests'
+}
+
+if '-r' in args or '--run' in args:
+    pos = args.index('-r')
+    del args[pos]
+
+    cmd = args[pos].strip()
+    del args[pos]
+
+
+proj_list = popen('find "$HOME/Create/"{Jobs,Projects,Books,LitleScripts,Tests} -maxdepth 1 -type d').readlines()
+if len(args)>0:
+    if args[0] in ['-c','--create']:
+        if len(args)>=3:
+            if ((args[1][0].lower() in categories) and
+                    (args[1].lower() in categories[args[1][0].lower()].lower())):
+                args[1] = categories[args[1][0].lower()]
+            else:
+                print(f'\033[1;31m[!]\033[00m the category \"{args[1]}\" do not exists!', file=e)
+                exit(1)
+            proj_dir = f'{projdir}/{args[1]}/{args[2]}'
+            print(proj_dir)
+            exit(
+                system(f'mkdir -p "{proj_dir}"')
+            )
+        else:
+            print(f'\033[1;31m[!]\033[00m must be 3 arguments : --create [job|proj|lscr|book|test] <name>', file=e)
+            exit(1)
+    elif args[0] in ['-d', '--delete']:
+        args = args[1:]
+        if len(args)>=1:
+            for arg in args:
+                subdir = ''
+                if '/' in arg:
+                    subdir = '/'.join(arg.split('/')[1:])
+                    arg = arg.split('/')[0]
+
+                if [i.lower() for i in proj_list].count(arg) > 1:
+                    print(f'\033[1;31m[!]\033[00m the project \"{arg}\" are replicated on list, you need to be most especific!', file=e)
+                    exit(1)
+
+                for i in proj_list:
+                    i = i.strip()
+
+                    if arg.lower() in i.lower():
+                        print(
+                            f'removing {i}' if not system(f'rm -rf "{i}"') \
+                            else f'\033[1;31m[!]\033[00m Delete "{i}" is impossible!',
+                            file=e)
+            exit(0)
+        else:
+            print(f'\033[1;31m[!]\033[00m must be 2 arguments : --delete <name>', file=e)
+            exit(1)
+
+    if '-l' in args:
+        if len(args) > 1:
+            if args[args.index('-l')+1][0]=='c':
+                proj_list = [categories[c] for c in categories]
+        for i in proj_list:
+            i = i.split('/')
+            if len(i)>5:
+                print('   -',i[len(i)-1].strip())
+            else:
+                print(i[len(i)-1].strip()+':')
+        exit(0)
+
+    p = 0
+    for arg in args:
+        subdir = ''
+        if '/' in arg:
+            subdir = '/'.join(arg.split('/')[1:])
+            arg = arg.split('/')[0]
+
+        arg_is_cat = False
+        for cat in categories:
+            if (arg.lower() in categories[cat].lower()
+                    and len(args) > p+1):
+                arg = f'{categories[cat]}/{args[p+1]}'
+                del args[p+1]
+            arg_is_cat = True
+
+
+        search_arg = [(True if (arg.lower() in i.lower()) else False)
+                      for i in proj_list]
+        if not arg_is_cat and search_arg.count(True) > 1:
+            print(f'\033[1;31m[!]\033[00m the project \"{arg}\" are replicated on list, you need to be most especific!', file=e)
+            exit(1)
+
+        for i in proj_list:
+            i = i.strip()
+
+            if arg.lower() in i.lower():
+                if not cmd:
+                    print(f'{i}/{subdir}')
+                    exit(0)
+                else:
+                    exit(
+                        system(f'{cmd} "{i}/{subdir}"')
+                    )
+        p += 1
+
+        print(f'\033[1;31m[!]\033[00m the project \"{arg}\" do not exists!', file=e)
+        exit(1)

@@ -1,0 +1,4 @@
+#!/bin/bash
+feh --bg-fill "$1" && echo "$1" > $HOME/.background
+# cp "$1" "/boot/grub/themes/arch-leap/background.png"
+# cp "$1" "/usr/share/sddm/themes/sugar-dark/Background.png"

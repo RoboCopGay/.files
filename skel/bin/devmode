@@ -1,0 +1,13 @@
+#!/bin/bash
+if [[ -e /tmp/running-devmode ]];then
+    echo :: Switching to the chroot
+    sudo arch-chroot /mnt/ su `whoami` 2> /dev/null || sudo chroot /mnt/ su `whoami`
+    echo :: Quiting from chroot
+else
+    touch /tmp/running-devmode
+    echo :: Mounting the /home
+    sudo mount --bind /home /mnt/home
+    echo :: Switching to the chroot
+    sudo arch-chroot /mnt/ su `whoami`
+    echo :: Quiting from chroot
+fi

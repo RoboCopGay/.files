@@ -1,0 +1,23 @@
+#!/bin/python3
+from os import environ as env, popen as cat
+
+dir_hist = env['HOME']+'/.cache/wmrun'
+try:
+    hist = open(
+        dir_hist
+    ).read().strip().split('\n')
+except:
+    hist = []
+
+bin = cat(
+    "dmenu_path"
+).read().strip().split('\n')
+
+cmd = cat(
+    "echo '"+ "\n".join(hist) +"\n"+ "\n".join(bin) + "' | dmenu"
+).read().strip()
+
+if cmd not in hist: hist.append(cmd)
+open( dir_hist, 'w' ).write( "\n".join(hist) )
+
+cat( "echo "+ cmd +" | ${SHELL:-\"/bin/sh\"}" )

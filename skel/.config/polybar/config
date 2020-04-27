@@ -1,0 +1,86 @@
+;=====================================================
+; The system tray and other default values for bars
+; inheriting from master are enabled in master.conf
+;
+; modules.conf contains all the modules that can be
+; added to a bar (NOTE: some will require configuration)
+
+[section/base]
+include-file = /home/robocopgay/.config/polybar/master.conf
+include-file = /home/robocopgay/.config/polybar/modules.conf
+
+
+;=====================================================
+; Openbox Bar
+
+[bar/openbox-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = jgmenu workspaces
+modules-center = clock
+modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory pkg net volume}
+
+
+;=====================================================
+; i3 Bar
+
+[bar/i3-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = eDP1
+
+tray-position = right
+tray-transparent = true
+tray-background =
+tray-padding = 2
+
+modules-left   = rofi_menu menu i3
+modules-center = clock
+modules-right  = pkg net network volume battery coreuse temperature memory
+
+[bar/i3-bar-hdmi]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor = HDMI1
+
+tray-position = right
+tray-transparent = true
+tray-background =
+tray-padding = 2
+
+modules-left   = rofi_menu menu i3
+modules-center = clock
+modules-right  = pkg net network volume battery coreuse temperature memory
+
+;=====================================================
+; Bspwm Bars
+
+[bar/bspwm-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = bspwm menu
+modules-center = clock
+modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory pkg net volume}
+
+
+;=====================================================
+; Generic Bars (used as fallback for unknown WM)
+
+[bar/generic-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = workspaces menu
+modules-center = clock
+modules-right  = ${env:POLYBAR_MODULES:coreuse temperature memory pkg net volume}
+

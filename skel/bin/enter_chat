@@ -1,0 +1,5 @@
+#!/bin/bash
+date="$(date --date='now' '+%d%m%Y')"
+room="$(echo "TTY@$date" | sha512sum | cut -d' ' -f1)"
+
+termchat -r "$room" -n "$1"

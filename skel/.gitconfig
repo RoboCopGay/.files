@@ -1,0 +1,15 @@
+[user]
+    email = vinicios.sousa909@gmail.com
+    name = RoboCopGay
+    editor = nvim
+[alias]
+    cm = commit -m
+    fcm = commit --amend -m
+
+    ch = checkout
+    br = branch
+
+    ls = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ [%cn]" --decorate
+    ll = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ [%cn]" --decorate --numstat
+[hub]
+    host = RoboCopBook

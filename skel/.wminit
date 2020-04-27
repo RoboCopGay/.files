@@ -1,0 +1,10 @@
+check-network &
+nm-applet &
+
+# super alone simulates Alt-F1
+ksuperkey -e 'Super_L=Alt_L|F1' &
+ksuperkey -e 'Super_R=Alt_L|F1' &
+
+bash $HOME/.fehbg &
+qbittorrent & if [[ "$?"==0 ]];then i3-msg kill; fi
+xfce4-power-manager&

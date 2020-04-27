@@ -1,0 +1,7 @@
+pane	0	0	:nvim	1	:*	1	:/home/robocopgay/Create/Projects/c_para_seres_humanos	1	nvim	:nvim readme.md
+pane	0	0	:nvim	1	:*	2	:/home/robocopgay/Create/Projects/c_para_seres_humanos	0	nvim	:nvim /home/robocopgay/.tmux.conf
+pane	0	0	:nvim	1	:*	3	:/home/robocopgay	0	zsh	:
+pane	10	1	:zsh	1	:*	1	:/home/robocopgay	1	bash	:bash /usr/bin/neofetch
+window	0	0	1	:*	7abb,131x34,0,0{66x34,0,0,0,64x34,67,0[64x17,67,0,2,64x16,67,18,17]}
+window	10	1	1	:*	5d17,131x34,0,0,18
+state	10	
