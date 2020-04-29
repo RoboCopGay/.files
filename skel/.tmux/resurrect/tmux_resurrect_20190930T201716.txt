@@ -1,5 +1,0 @@
-pane	0	0	:nvim	1	:*	1	:/home/robocopgay/Create/Projects/c_para_seres_humanos	1	nvim	:nvim readme.md
-pane	0	0	:nvim	1	:*	2	:/home/robocopgay/Create/Projects/c_para_seres_humanos	0	nvim	:nvim /home/robocopgay/.tmux.conf
-pane	0	0	:nvim	1	:*	3	:/home/robocopgay	0	zsh	:
-window	0	0	1	:*	7abb,131x34,0,0{66x34,0,0,0,64x34,67,0[64x17,67,0,2,64x16,67,18,17]}
-state	0	
