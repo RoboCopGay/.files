@@ -2,7 +2,7 @@
 
 ![RoboCopDotFiles](./banner.png)
 
-This is my config files colection, are all on `skel` folder, this did made for ArchLinux, so will'nt to works on other systems without an chage of the `install.sh` file, good luck for the gui that will to try it.
+This is my config files colection, and it's all on `skel` folder, this did made for ArchLinux, so will'nt to works on other systems without an chage of the `install.sh` file, good luck for the gui that will to try it.
 
 ## Install
 
