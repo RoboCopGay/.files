@@ -35,21 +35,10 @@ die(){
    Please, install it before run this script."
 
 [[ "$(cat /etc/pacman.conf | grep "archlabs_repo")" == "" ]] && \
-    echo ":: Adding ArchLabs repository on /etc/pacman.conf" && echo "
-
-# .Files lines begins from here
-# -------------------------------
-
-# [archlabs_unstable]
-# Server = https://bitbucket.org/archlabslinux/$repo/raw/master/$arch
-
-[archlabs_repo]
-Server = https://bitbucket.org/archlabslinux/$repo/raw/master/$arch
-Server = https://sourceforge.net/projects/archlabs-repo/files/$repo/$arch
-Server = https://github.com/ARCHLabs/$repo/raw/master/$arch
-
-" | sudo tee -a /etc/pacman.conf > /dev/null
+    sudo cp pacman.conf /etc/pacman.conf > /dev/null
 echo ":: Downloading fresh package databases" && sudo pacman -Sy > /dev/null
+echo ":: Installing the yay AUR Helper"
+sudo pacman -U ./yay.pkg.tar.xz
 
 
 installpackages(){
