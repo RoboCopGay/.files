@@ -93,6 +93,7 @@ nemo-qt-components
 nemo-share
 neofetch
 neovim
+python-pip
 network-manager-applet
 networkmanager
 ntfs-3g
@@ -202,3 +203,5 @@ youtube-dl
 zsh
 zsh-completions
 zsh-syntax-highlighting
+git
+hub

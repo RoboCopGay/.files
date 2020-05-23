@@ -53,6 +53,7 @@ installpackages(){
     fi
 
     yay -S $(cat "$dotfile_dir/packages.list") --noconfirm --needed && echo ":: All packages installed" || die "[!] Did Some extern error, aborting..."
+    pip install pynvim > /dev/null 2> /dev/null
 }
 
 installdotfiles(){
@@ -79,3 +80,4 @@ if [[ $(cat .git/config | grep "RoboCopGay/dotfiles" 2> /dev/null ) ]] 2> /dev/n
 else
     die '[!] You need to stay on dotfiles repository folder'
 fi
+
