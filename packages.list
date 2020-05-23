@@ -1,3 +1,4 @@
+arch-install-scripts
 archlabs-baph
 archlabs-fonts
 archlabs-icons
@@ -32,6 +33,7 @@ ffmpeg
 file
 filesystem
 findutils
+firefox
 flex
 gawk
 gcc
@@ -61,6 +63,7 @@ iputils
 ipw2100-fw
 ipw2200-fw
 irssi
+iw
 iwd
 jfsutils
 laptop-detect
@@ -112,21 +115,28 @@ pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
 python-pip
+qbittorrent
+qt5-styleplugins
 qt5ct
 rofi
 rp-pppoe
 sed
 shadow
+simplescreenrecorder
+spotify
 sudo
 systemd
 systemd-sysvcompat
 tar
+tcc
+telegram-desktop
 texinfo
 tree
 ttf-dejavu
 ttf-fira-code
 ttf-font-awesome
 ttf-hack
+ttf-ms-fonts
 unrar
 unzip
 util-linux
@@ -135,7 +145,6 @@ vlc
 vulkan-intel
 wget
 which
-wireless_tools
 wpa_supplicant
 xapps
 xclip
@@ -189,6 +198,7 @@ xorg-xwud
 xterm
 xz
 yay-bin
+youtube-dl
 zsh
 zsh-completions
 zsh-syntax-highlighting
