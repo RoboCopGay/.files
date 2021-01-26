@@ -25,4 +25,4 @@ xset dpms 600 900 1200
 # keyboard repeat rate
 xset r rate 350 60
 
-export QT_QPA_PLATFORMTHEME=gtk2
+export QT_QPA_PLATFORMTHEME=qt5ct

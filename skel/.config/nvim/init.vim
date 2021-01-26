@@ -136,8 +136,8 @@ nnoremap <silent> <Leader>q :B<CR>:silent tabclose<CR>gT
 nnoremap <silent> <Leader>- :tabedit <C-R>=expand("%:p:h")<CR><CR>
 
 " split the window vertically and horizontally
-nnoremap _ <C-W>s<C-W><Down>
-nnoremap <Bar> <C-W>v<C-W><Right>
+nnoremap _ <C-W>s<C-W><Down> :e .<CR>
+nnoremap <Bar> <C-W>v<C-W><Right> :e .<CR>
 
 
 " ------ autocmd ------
@@ -336,6 +336,7 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'maralla/completor.vim', { 'do': 'pip install jedi' }
+Plug 'ycm-core/YouCompleteMe', { 'do': 'python3 install.py ' }
 
 Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
 
