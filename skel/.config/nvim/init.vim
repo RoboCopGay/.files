@@ -112,7 +112,7 @@ vnoremap > >gv
 vnoremap < <gv
 
 " toggle line numbers, nn (no number)
-nnoremap <silent> <Leader>nn :set number!
+nnoremap <silent> <Leader>nn :set number!<cr>
 
 " gj/k but preserve numbered jumps ie: 12j or 45k
 nmap <buffer><silent><expr>j v:count ? 'j' : 'gj'
@@ -136,8 +136,8 @@ nnoremap <silent> <Leader>q :B<CR>:silent tabclose<CR>gT
 nnoremap <silent> <Leader>- :tabedit <C-R>=expand("%:p:h")<CR><CR>
 
 " split the window vertically and horizontally
-nnoremap _ <C-W>s<C-W><Down> :e .<CR>
-nnoremap <Bar> <C-W>v<C-W><Right> :e .<CR>
+nnoremap _ <C-W>s<C-W><Down>
+nnoremap <Bar> <C-W>v<C-W><Right>
 
 
 " ------ autocmd ------
@@ -314,7 +314,7 @@ set ignorecase
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
-
+Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 
 Plug 'sheerun/vim-polyglot'
@@ -336,7 +336,10 @@ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'maralla/completor.vim', { 'do': 'pip install jedi' }
-Plug 'ycm-core/YouCompleteMe', { 'do': 'python3 install.py ' }
+Plug 'ycm-core/YouCompleteMe', { 'do': 'python3 install.py --all' }
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
 
 Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
 
@@ -371,7 +374,6 @@ set shiftwidth=2
 
 " Atalhos
 
-inoremap <C-Space> <C-p>
 inoremap <C-l> <C-x><C-l>
 inoremap <C-o> <C-x><C-o>
 
@@ -400,7 +402,7 @@ set clipboard=unnamed
 set expandtab
 set shiftwidth=4
 
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<c-space>"
 let g:UltiSnipsJumpForwardTrigger="<c-f>"
 let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips', 'UltiSnips']
@@ -411,8 +413,8 @@ let g:UltiSnipsEditSplit="vertical"
 let g:ale_fix_on_save = 1
 let g:jedi#completions_enabled = 0
 
-let g:ycm_min_num_of_chars_for_completion = 3
-let g:ycm_min_num_identifier_candidate_chars = 3
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_min_num_identifier_candidate_chars = 1
 let g:ycm_enable_diagnostic_highlighting = 0
 " Don't show YCM's preview window [ I find it really annoying ]
 set completeopt-=preview
@@ -427,3 +429,28 @@ let g:ale_c_build_dir = "./build"
 let g:ale_c_parse_makefile = 1
 let g:ale_cpp_gcc_options = '-std=c++14 -isystem /usr/include/c++/v1 -I/usr/include/c++/v1 -I/opt/ros/kinetic/include -I/usr/local/include -I/usr/include -I/usr/include/x86_64-linux-gnu'
 let g:ale_cpp_clang_options = '-std=c++14 -isystem /usr/include/c++/v1 -I/usr/include/c++/v1 -I/opt/ros/kinetic/include -I/usr/local/include -I/usr/include -I/usr/include/x86_64-linux-gnu'
+
+" Fix files with prettier, and then ESLint.
+let b:ale_fixers = ['prettier', 'eslint']
+" Equivalent to the above.
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_autoimport = 0
+
+let g:ale_sign_column_always = 1
+
+let g:ale_sign_error = '|>'
+let g:ale_sign_warning = '<>'
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let b:ale_linter_aliases = ['css', 'javascript']
+let b:ale_linters = ['stylelint', 'eslint']
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
