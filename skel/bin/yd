@@ -1,0 +1,1 @@
+youtube-dl $* > /dev/null 2> /dev/null &

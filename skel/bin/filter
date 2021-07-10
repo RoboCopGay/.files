@@ -1,0 +1,7 @@
+#!/bin/zsh
+
+for f in `python -c "print('\\n'.join(set('''$(
+    grep $@ -r -n . | awk -F: '{ print $1 } '
+    )'''.split())))"`; do
+    echo $f
+done

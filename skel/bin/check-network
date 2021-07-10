@@ -7,17 +7,20 @@ wl=''
 eth=''
 dc='\/'
 
+OUT=""
+if ip link | grep -q '[0-9]:\se.*:.*state UP'; then
+    OUT="$eth"
+else
+    ssid=$(iw dev | grep ssid | awk '{print $2}')
+    OUT="$wl $ssid"
+fi
+
 # loop and dump info to the pipe
 until { ping -c 1 'archlinux.org' || ping -c 1 'archlabslinux.com'; } >/dev/null 2>&1; do
     for ((i=0; i < ${#dc}; i++)); do
-        echo "${dc:$i:1}"
+        echo "$OUT ${dc:$i:1}"
         sleep 0.25
     done
 done
 
-if ip link | grep -q '[0-9]:\se.*:.*state UP'; then
-    echo "$eth"
-else
-    ssid=$(iw dev | grep ssid | awk '{print $2}')
-    echo "$wl $ssid"
-fi
+echo "$OUT"

@@ -1,0 +1,18 @@
+x=982
+y=606
+houry=703
+hourx=1183
+xdotool mousemove $x $y ; sleep 0.1
+xdotool mousedown 1 ; xdotool mouseup 1 ; sleep 0.1
+xdotool mousemove $hourx $houry ; sleep 0.1
+xdotool mousedown 1 ; xdotool mouseup 1 ; sleep 0.1
+xdotool mousedown 1 ; xdotool mouseup 1 ; sleep 0.1
+xdotool key BackSpace ; sleep 0.1
+xdotool key 0 ; sleep 0.1
+xdotool key 8 ; sleep 0.1
+xdotool key Tab ; sleep 0.1
+xdotool key BackSpace ; sleep 0.1
+xdotool key 1 ; sleep 0.1
+xdotool key 6 ; sleep 0.1
+xdotool key Tab ; sleep 0.1
+xdotool key KP_Enter

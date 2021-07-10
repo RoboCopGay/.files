@@ -1,0 +1,12 @@
+#!/bin/python3
+
+from sys import stdin
+
+lines = set()
+
+line = stdin.readline()
+while line:
+    lines.add(line.strip())
+    line = stdin.readline()
+
+print("\n".join(lines).strip())

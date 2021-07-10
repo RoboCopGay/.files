@@ -1,0 +1,10 @@
+#!/bin/python
+
+from os import popen as cat, system as exe
+
+kb_list = cat("xkb-switch -l").read().strip().split()
+curr = kb_list.index(cat("xkb-switch").read().strip())
+new = curr+1 if curr < len(kb_list)-1 else 0
+print(kb_list[curr], '->', kb_list[new])
+
+exe("xkb-switch -s '%s'" % kb_list[new])
