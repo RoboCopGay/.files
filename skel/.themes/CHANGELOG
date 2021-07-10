@@ -1,0 +1,199 @@
+[20210309]
+ * Fix login background script when sh is linked to dash
+
+[20210226]
+ * Fix login background script when it's run with sudo
+
+[20210202]
+ * Update for gnome 3.38.3
+
+[20210118]
+ * Fix calendar event not visible
+
+[20201205]
+ * Update for gnome 3.38.2
+ * Add gschema configuration for tilix, eof, filechooser & gnome-shell keybindings
+
+[20201117]
+ * Fix top bar calendar contrast issue (fixes #165)
+ * Add cantarell font as a dependency for ubuntu
+
+[20201022]
+ * Set flat-remix-gnome as default session
+ * Add Flat-Remix code color-schemes
+ * Add gschema override
+
+[20201013]
+ * Fix shadows for osd panel
+ * Change the background of the search contents
+ * Change the background of the app folders to transparent dark
+ * Add missing color-pick icon
+ * Update gnome 3.38.1
+
+[20200926]
+ * Fix app grid for gnome 3.36
+ * Fix calendar-week-number's padding for gnome 3.36
+ * Fix frequent apps for gnome 3.36
+ * Fix activities' close window button position for gnome 3.36
+ * Recover black panel
+
+[20200925]
+ * Update for gnome-shell 3.38
+
+[20200905]
+ * Update for gnome-shell 3.36.5
+
+[20200723]
+ * Improve app-folder-dialog design
+ * Improve app folders background and add shadow
+ * Increase border-radius for all corners
+ * Improve top-panel design
+
+[20200624]
+ * Fix Flat-Remix session not working
+ * Fix makefile: include PopOS as Ubuntu
+
+[20200617]
+ * Fix makefile: set Flat-Remix-Blue as the base theme
+ * Change assets' colors for each variant
+ * Add new color variants to match Flat-Remix GTK themes
+ * Update upstream version to 3.36.3
+
+[20200502]
+ * Improve miami-dark switch visibility
+ * Update gnome-shell 3.36.2
+ * Change window-clone-border color
+ * Remove dash-to-dock border Fixes #143
+
+[20200420]
+* Fix gresource file for ubuntu 20.04
+* Update Makefile for Ubuntu installation
+* Transparentize window-clone-border
+* Add text-shadow to selected app in app switcher
+* Osd font tweaks: set font-weight to bold and change light variant color to $fg_color
+* Add darkest theme variant
+* Add workspace-indicator extension styles
+
+[20200412]
+ * Fix osd transparent level bar
+ * Remove login entry outline
+ * Add shadow to app switcher icons
+ * Remove workspace switcher indicator borders
+ * Reduce workspace-switcher padding and add shadow to active workspace indicator
+ * Improve app switcher
+ * Match osd design with pop-overs
+ * Increase panel text and icon shadow
+ * Change show-apps button background to transparent white
+ * Make app folders transparent white
+ * Improve workspace pager
+ * Remove panel-corner-radius variable
+ * Overview window-picker improvements
+ * Make search entry transparent
+
+[20200405]
+ * Add Miami variants
+ * Improve searchbar design
+ * Use current background image as gdm background
+
+[20200329]
+ * Update login screen design
+ * Add login background
+ * Add gresource file installation to makefile
+ * Add gresource file
+ * Makefile add install and uninstall rules
+ * Remove search results box like background
+
+ [20200320]
+ * Improve app-view-control buttons
+ * Flatten all calendar buttons
+ * Change calendar date-label font weight
+ * Increase calendar events-section-title padding
+ * Flatten calendar
+ * Remove slider handle
+ * Improve popup-menu-items
+ * Use $base_border_radius instead of hardcoded px
+ * Round out popup sub-menu
+
+[20200314]
+ * Align right popover with panel end
+ * Add missing css files
+ * Remove panel button arrows
+ * Remove gnome-shell-high-contrast.scss
+ * Add fullPanel variant
+ * Change panel background to transparent black for all variants
+ * Modify overview window close buttons
+ * Add shadow to popovers
+ * Make dash transparent
+ * Configure checkbox light/dark variants
+ * Update panel design using Kali themes as reference
+ * Reduce font size
+ * Initial setup for gnome 3.36
+
+[20191116]
+ * Configure Makefile and package scripts to auto generate login background on install
+
+[20191110]
+ * Update CHANGELOG version 20191109
+ * Fix theme not being applied to gdm
+
+[20191109]
+ * Add cursor accessibility missing icons
+
+[20191027]
+ * Fix build.sh script does not parse URL encoded paths; Fixes #111
+ * Improve hotplug notification styles
+
+[20190926]
+ * Fix blurry popup menus
+
+[20190925]
+ * Improve popup-menu margins for gnome-shell 3.34
+
+[20190918]
+ * Fix gnome-shell 3.34 colors
+ * Add folder editor styles
+ * Add folder icon visual drag-over feedback
+ * Add horizontal workspaces layout support
+ * App icon helper tweaks
+ * Increase window overview thumbnail border witdth
+ * Provide icon helper classes
+ * Don't apply overlap-preventing padding to search results
+ * Set search results content max width for gnome-shell 3.34
+ * Anotation 'UNTIL GNOME 3.32': custom styling of user submenu icon
+ * Add pie-timer styles
+ * Add ripple-pointer-location styles
+ * Support TCRYPT
+ * Move password entry to a grid
+ * Remove window-clone-border corner gap
+
+[20190829]
+ * Change lightbox background color to black
+
+[20190822]
+ * Fix transparent wifi panel button
+ * Change search-entry selected text colors
+
+[20190814]
+ * Change screenShield notification colors
+ * Add panel background transition on overview
+ * Change app menu and overview colors
+ * Remove panel background on overview
+
+[20190616]
+ * Remove .modal-dialog-linked-button inset shadow for light variant
+ * Change ScreenShield notification and app folder background
+ * Lighten .modal-dialog-linked-button inset shadow
+
+[20190608]
+ * Fix Pop OS theme conflicts; Fixes #89
+
+[20190530]
+ * Remove dialog linked button focus decoration
+
+[20190514]
+ * Use dafault login background if lock image is xml
+ * Bring modal-dialog shadow back
+ * Fix high contrast switches
+ * Syncronize switch assets with gtk theme
+ * Add shadow to close icons
+

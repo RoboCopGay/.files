@@ -1,6 +1,6 @@
 [user]
-    email = vinicios.sousa909@gmail.com
-    name = RoboCopGay
+    email = pl4nk1ton@gmail.com
+	name = Yaks Souza
     editor = nvim
 [alias]
     cm = commit -m
@@ -8,8 +8,16 @@
 
     ch = checkout
     br = branch
+    rp = remote
+    st = status
 
     ls = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ [%cn]" --decorate
-    ll = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ [%cn]" --decorate --numstat
+    ll = log --pretty=format:"%C(blue)%h%Cred%d\\ %Creset%s%C(yellow)\\ %ar\\ [%cn]" --decorate --numstat
 [hub]
     host = RoboCopBook
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[url "git@github.com:"]
+    insteadOf = https//github.com/
+[init]
+	defaultBranch = root

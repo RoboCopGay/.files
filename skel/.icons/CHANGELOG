@@ -1,0 +1,633 @@
+[20210121]
+ * Add custom desktop icons for color-folder script
+ * Add new color-folder script and templates
+ * Change background for text-x-meson mimetype icon
+ * Add image-x-cursor mimetype icon
+ * Add application-x-firmware mimetype icon
+ * Add application-vnd.iccprofile mimetype icon
+ * Add flatpak mimetype icons
+ * Change background for text-x-csharp mimetype icon
+ * Change font for text-x-c mimetype icon
+ * Improve text-x-patch mimetype icon
+ * Update gnome-freecell app icon
+ * Update meld app icon
+ * Add foliate app icon
+ * Update video app icons
+ * Remove transparent elements from video mimetype icon
+ * Add element app icon
+ * Redesign master-pdf-editor app icon
+
+[20210115]
+ * Add 64 new mimetype icons
+ * Update all mimetype icons
+ * Add symbolic icons for xfsm-*
+ * Add missing app icon xfsm-lock
+ * Use power icon for xfce4-battery-plugin
+
+[20210104]
+ * Add desktop-profiler app icon
+ * Add 3 extra mimetype icons
+ * Add depth shadows to mimetype icons
+ * Fix shadows for mimetype icons
+ * Add kotlin swift and rust mimetype icons
+ * Update system-log-out icon
+ * Add xfce4-sample-plugin app icon
+ * Add xfce4-statusnotifier-plugin app icon
+ * Add eyes app icons
+ * Improve preferences-color app icon
+ * Differentiate xfce-terminal-settings and xfce-terminal icons
+ * Add ebook-reader app icon symlink
+ * Remove emotes, fallback to system provided icons
+ * Extra icons for Xfce 4.16
+ * Differentiate color settings and appearance settings
+ * Update mouse icon
+ * Update keyboard icon
+ * Update regedit app icon
+ * Add symlinks for xfce 4.16 icon naming
+
+[20201217]
+ * Copy missing icons to Blue variants
+ * Add 9 new device icons
+ * Add 940 new app icon symlinks
+ * Update media-optical device icon
+ * Update 8tracks app icon
+ * Update amarok app icon
+ * Update java app icon
+ * Update ring app icon
+ * Update textwrangler app icon
+ * Update kfoldersync app icon
+ * Update all wine app icons
+ * Add kde-frameworks app icon
+ * Add spiderfoot app icon
+ * Add thunderbolt device icon
+ * Add new xfce-notification app icon symlink
+ * Add new mousepad app icon symlink
+ * Add missing gnome-screenshot symbolic icons
+
+[20201112]
+ * Add package-available-locked status icon
+ * Update emblem icons
+ * Fix broken symlink for preferences-desktop-keyboard-symbolic.svg
+ * Update action symbolic icons
+ * Update app symbolic icons
+ * Update device symbolic icons
+ * Update places symbolic icons
+ * Update status symbolic icons
+ * Update panel icons
+ * Update action icons for the light theme
+ * Update action icons for the dark theme
+ * Update action icons
+ * Use symbolic icon for edit-find
+ * Fix edit-find app icon
+
+[20201017]
+ * Update musique app icon
+ * Update file-manager app icon
+ * Update maps app icon
+ * Minify app icons
+ * Update deja-dup app icon
+ * Update gnome password-sage app icon
+ * Add gnome-keysign app icon
+ * Update games app icon
+ * Update mpv app icon
+ * Update blender app icon
+ * Update gnome-tali app icon
+ * Update accerciser app icon
+ * Reduce shadows for some app icons
+ * Update gnome-boxes app icon
+ * Update discord app icon
+ * Fix broken icon input-touchpad-off
+ * Remove symbolic icons from scalable directory
+ * Update desktop-theme app icon
+ * Fix wrong edit-paste symbolic icon
+
+[20201009]
+ * Add 750 new app icon symlinks
+ * Update hitori app icon
+ * Update nvidia app icon
+ * Update weader app icon
+ * Update mail app icon
+ * Add new gnome-parental-control symlink
+ * Update recipes app icon
+ * Update lightsoff app icon
+ * Update tetravex app icon
+ * Update simplescan app icon
+ * Update quadrapassel app icon
+ * Update sudoku app icon
+ * Update gnome-robots app icon
+ * Resize tali app icon
+ * Update cronometer app icon
+ * Fix icons for KDE
+ * Update glade app icon
+ * Update gnome-usage app-icon
+ * Update iagno app icon
+ * Fix evince app icon symlink
+ * Update gimp app icon
+ * Update lutris app icon
+ * Update peek app icon
+ * Update clock app icon
+ * Update camera app icon
+ * Update camera-web app icon
+ * Improve color-palette
+ * Fix issue with qt apps
+ * Fix relative symlinks
+
+[20200710]
+ * Add asleap app icon
+ * Add dns2tcp app icon
+ * Add dnsenum app icon
+ * Add dnsrecon app icon
+ * Add enum4linux app icon
+ * Add ffind app icon
+ * Add fierce app icon
+ * Add fls app icon
+ * Add fping app icon
+ * Add fsstat app icon
+ * Add hashid app icon
+ * Add hfind app icon
+ * Add hping3 app icon
+ * Add icat app icon
+ * Add ifind app icon
+ * Add ils app icon
+ * Add img_cat app icon
+ * Add img_stat app icon
+ * Add iodine app icon
+ * Add istat app icon
+ * Add jcat app icon
+ * Add jfs app icon
+ * Add lbd app icon
+ * Add loaddb icon
+ * Add mactime app icon
+ * Add miredo app icon
+ * Add mmcat app icon
+ * Add mmls app icon
+ * Add mmls mmstat fsstat app icons
+ * Add nbt-scan app icon
+ * Add pass-the-hash app icon
+ * Add proxytunnel app icon
+ * Add ptunnel app icon
+ * Add pwnat app icon
+ * Add rebind app icon
+ * Add rsmangler app icon
+ * Add samdump2 app icon
+ * Add sigfind app icon
+ * Add smbmap app icon
+ * Add snmp-check app icon
+ * Add sorter app icon
+ * Add srch-string app icon
+ * Add ssldump app icon
+ * Add sslh app icon
+ * Add sslscan app icon
+ * Add sslsplit app icon
+ * Add sslyze app icon
+ * Add stunnel4 app icon
+ * Add swaks app icon
+ * Add thcping6 app icon
+ * Add thc-pptp-bruter app icon
+ * Add tsk_comparedir app icon
+ * Add tsk_gettimes app icon
+ * Add tsk_recover app icon
+ * Add udptunnel app icon
+ * Add wafw00f app icon
+ * Improve blkstat app icon
+ * Improve dirb and dirbuster app icon
+ * Improve dnschef app icon
+ * Improve gnome-extensions app icon
+ * Improve hydra app icon
+ * Improve jls app icon
+ * Improve magicrescue app icon
+ * Improve masscan app icon
+ * Improve nbtscan app icon
+ * Improve pixiewps app icon
+ * Improve sdb app icon
+ * Improve dbd app icon
+ * Improve skipfish app icon
+ * Improve system-monitor icon
+ * Improve theharvester app icon
+ * Improve voiphopper app icon
+ * Improve wifite app icon
+
+[20200623]
+ * Add apostrophe app icon
+ * Add new qgis app icon
+ * Add Alacritty app icon symlink
+ * Add alacritty app icon
+ * Add sslsplit app icon
+ * Add tcpreplay app icon
+ * Add chntpw app icon
+ * Add dnschef app icon
+ * Add bully app icon
+ * Remove broken symlinks
+ * Change colors for synaptic's package icons
+ * Add spooftooth app icon
+ * Add onesixtyone app icon
+ * Add patator app icon
+ * Add netmask app icon
+ * Add masscan app icon
+ * Improve burp app icon
+ * Improve wifite app icon
+ * Add davtest app icon
+ * Add spike app icon
+ * Add voiphopper app icon
+ * Add sbd app icon
+ * Add wapiti app icon
+ * Add cadaver app icon
+ * Add dbd app icon
+ * Add laudanum app icon
+ * Add scrounge-ntfs app icon
+ * Add scalpel app icon
+ * Add pdfid app icon
+ * Add dirb and dirbuster app icons
+ * Add pdf-parser app icon
+ * Add magicrescue app icon
+ * New xfce menu icon
+ * Add whatweb app icon
+
+[20200511]
+ * Add gnome on-screen keyboard key icons
+ * Change panel icons' color for light variant
+ * Change action icons' color
+ * Update panel icons
+ * Move colorpicker hicolor icon to force inkscape use the 'symbolic' like one
+ * Set all symbolic icons to the same color
+ * Update action icons from Papirus icon theme
+ * Recover previous ac-adapter-symbolic icon
+ * Update symbolic icons from Papirus icon theme
+ * Sync kali-menu icons
+ * Add vfeed app icon
+ * Add magictree app icon
+ * Add phishing-frenzy app icon
+ * Fix: Replace all text elements with paths
+ * Add jboss-dbpwaudit app icon
+ * Add jboss-autopwn app icon
+ * Add gqrx app icon
+ * Update edb48 app icon
+ * Add edb48 app icon
+ * Add cutter app icon
+ * Update hydra app icon symlinks
+ * Update netbeans app icon
+ * Add nmapsi4 app icon
+ * Add alarm app icons
+ * Add compton app icon
+ * Add minicom app icon symlink
+
+[20200414]
+ * Update zim app icon
+ * Add bed app icon
+ * Add vega app icon
+ * Add affcat app icon
+ * Add ace app icon
+ * Add recstudio app icon
+ * Update kali-* link icons
+ * Update hydra app icon
+ * Add ferret-sidejack app icon
+ * Add tnscmd10g app icon
+ * Update crunch app icon
+ * Update exploit-db app icon
+ * Add nessus app icons
+ * Add jsql app icons
+ * Add ssdeep app icons
+ * Update flasm app icons
+ * Update sqldict app icons
+ * Add bbqsql app icon
+ * Add mdb-sql app icon
+ * Add sqlsus app icon
+ * Add galleta app icon
+ * Update volatility app icon
+ * Update foremost app icon
+ * Update foremost app icon
+ * Add foremost app icon
+ * Add sqldict app icon
+ * Replace kali-www symlink to kali-menu with kali logo
+ * Add bytecode-viewer app icons
+ * Add jd-gui app icons
+ * Add multiple debbuger app icons
+ * Add dex2jar app icon
+ * Update flasm app icon
+ * Update volafox app icon
+ * Add yara app icon
+ * Add chirp app icon
+ * Add mfterm app icon
+ * Add mfoc app icon
+ * Add gnome 3.36 parental control app icon
+ * Update gnome-extensions app icon
+ * Add 3.36 gnome-extensions app icon
+ * Update driftnet app icon
+ * Add driftnet app icon
+ * Add rainbowcrack app icon
+ * Add rcracki-mt app icon
+ * Update pyrit app icon
+ * Add nishang app icon
+ * Update termineter app icon
+ * Add shellnoob app icon
+ * Add eyewitness app icon
+ * Update backdoor-factory app icon
+ * Add hamster-sidejack app icon
+ * Add openvas app icon
+ * Add paros app icon
+ * Convert svg text to path
+ * Add powersploit app icon
+ * Add wordlist app icon
+ * Add jadx app icon
+ * Add veil app icon
+ * Add volatility app icon
+ * Add volafox app icon
+ * Add w3af app icon
+ * Add xplico app icon
+ * Fix watobo app icon
+ * Add watobo app icon
+ * Add golismero app icon
+ * Update aircrack app icon
+ * Add pyrit app icon
+ * Add dradis app icon
+ * Add rkhunter app icon
+ * Add apache-users app icon
+ * Add blkcalc app icon
+ * Add blkcat app icon
+ * Add blkls app icon
+ * Add 0trace app icon
+ * Add preferences-desktop-cursors app icon
+ * Add 188 app symlinks
+ * Add wfuzz app icon
+ * Add theHarvester app icon
+ * Update WPScan app icon
+ * Add missing kali-categories icon
+
+[20200116]
+ * Add ettercap app icon
+ * Add radare app icon
+ * Add proxychains app icon
+ * Add msfpc app icon
+ * Add pixiewps app icon
+ * Add reaver app icon
+ * Add binwalk app icon
+ * Add legion app icon
+ * Add pipal app icon
+ * Add cewl app icon
+ * Add macchanger and network-card app icons
+ * Add ncrack app icon
+ * Add clang app icon
+ * Add guymager app icon
+ * Add ophcrack app icon
+ * Add cutycapt app icon
+ * Add responder app icon
+ * Add skipfish app icon
+ * Add wifite app icon
+ * Add mdk3 app icon
+ * Add sidguesser app icon
+ * Add ollydbg app icon
+ * Add oscanner app icon
+ * Add dmitry app icon
+ * Add chrootkit app icon
+ * Add lynis app icon
+ * Add kali-exploit-db app icon
+ * Add bettercap app icon
+ * Add kali-training app icon symlink
+ * Change science category symlink icon
+
+[20191223]
+ * Add unix-privesc-check app icon
+ * Add hashcat app icon
+ * Add kismet app icon
+ * Add mitmproxy app icon
+ * Add mimikatz app icon
+ * Add hashdeep app icon
+ * Add metagoofil app icon
+ * Add kali-p0f app icon symlink
+ * Add sqlninja app icon
+ * Add sparta app icon
+ * Add weevely app icon
+ * Add recon-ng app icon
+ * Add netdiscover app icon
+ * Add ike-skan app icon
+ * Add maltego app icon
+ * Add afl app icon
+ * Add bulk extractor app icon
+ * Add cowpatty app icon
+ * Add javasnoop app icon
+ * Add johnny app icon
+ * Add john the ripper app icon
+ * Add shelter app icon
+ * Add commix app icon
+ * Update setoolkit app icon
+ * Update zenmap app icon
+ * Update setoolkit app icon aligment
+ * Fix netsniff app icon
+ * Fix autopsy app icon
+
+[20191216]
+ * Change actions and symbolic icons color
+ * Remove gradient background from preferences-desktop-sound app icon
+ * Update firefox-trunk app icon
+ * Update firefox-developer app icon
+ * Update firefox app icon
+ * Add sqlmap app icon
+ * Add medusa app icon
+ * Add wpscan app icon
+ * Add webscarab app icon
+ * Add beef-xss app icon
+ * Add nikto app icon
+ * Add backdoor-factory app icon
+ * Add autopsy app icon
+ * Add apktool app icon
+ * Add exe2hex app icon
+ * Add metasploit app icon
+ * Add kali-wireshark app symlink
+ * Add kali-hardware-hacking-trans kali-menu category icon
+ * Add kali-stress-testing-trans kali-menu category icon
+ * Add kali-system-services-trans kali-menu category icon
+ * Add kali-social-engineering-trans kali-menu category icon
+ * Add kali-reverse-engineering-trans kali-menu category icon
+ * Add ali-exploitation-tools-trans kali-menu category icon
+ * Add kali-web-application-trans kali-menu category icon
+ * Add kali-forensics-trans kali-menu category icon
+ * Add kali-sniffing-spoofing-trans kali-menu category icon
+ * Add kali-maintaining-access-trans kali-menu category icon
+ * Add kali-truecrypt symlink app icon
+ * Add kali-reporting-tools-trans kali-menu category icon
+ * Add kali-password-attacks-trans kali-menu category icon
+ * Add kali-vuln-assessment-trans kali-menu category icon
+ * Add kali-info-gathering-trans kali-menu category icon
+ * Symlink kali-forums kali-tools kali-www to kali-menu app icon
+
+[20191122]
+ * Improve user-desktop place icon colors
+ * Add kali-docs app icon symlink
+ * Add kali-bugs app icon symlink
+ * Increase bugs app icon contrast for better visibility on dark themes
+ * Add exploit-db logo
+ * Add offensive-security logo
+ * Add vulnhub app icon
+ * Add python faraday app icon
+ * Add armitage app icon
+ * Add netsniff app icon
+ * Add netsniff app icon
+ * Add aircrack-ng app icon
+ * Add king-phisher app icon
+ * Update zenmap app icons
+ * Add kali-recordmydesktop app icon
+ * Add kali-set app icon
+ * Add kali-hydra symlink app icon
+ * Add kali-fern-wifi-cracker symlink app icon
+ * Add kali-burpsuite symlink app icon
+ * Change mini.xterm symlink to utilities-terminal.svg
+ * Change xfce menu icons
+ * Fix xfce app icons
+ * Fix xfce panel ac-adapter-xymbolic too big
+ * Add kali panel menu icon
+
+[20191018]
+ * Add go mimetype file
+ * Add shadowsocks-qt5 app icon
+ * Flip memory card device icon
+ * Add visual studio and blender symbolic app icons 
+ * Add org.gnome.Nibbles app icon symlink
+ * Add kali-menu app icon
+ * Fix kontact and mugshot app icon symlinks
+ * Fix xfwm4 tweaks wrong symlinks
+
+[20190908]
+ * Update regedit app icon
+ * Add centos distribution logo
+ * Add PopOS distribution logo
+ * Add yuzu app icon
+ * Fix modem-manager app icon KDE shadows
+ * Add pop-shop app icon symlink
+ * Add com.system76.Popsicle.svg app icon symlink
+ * Add folder-desktop places icon symlink
+ * Add wps-office-pdfadmin app icons
+ * Add deepin-draw app icon symlink
+ * Move drawing applications symlinks to applications-graphics-drawing.svg
+ * Add deepin-repair-tool app icon
+ * Move download app icon and add deepin-download symlink
+ * Fix deepin-system-monitor wrong symlink
+ * Add dde-introduction app icon
+ * Add deepin-cloud-scan-configurator symlink to deepin-cloud-scan-config-helper app icon
+ * Add deepin-cloud-scan-config-helper app icon
+ * Add deepin-manual app icon
+ * Add deepin cloud printer app icons
+ * Add deepin-launcher app icon
+ * Add deepin-feedback app icon
+ * Add deepin-toggle-desktop app icon
+ * Add preferences-system-splash app icon
+ * Add livepatch app icon
+ * Change org.gnome.DejaDup.svg wrong symlink with yast-snapper
+
+[20190830]
+ * Fix evolution online/offline status icon does not scale; Fixes #126
+ * Update insomnia app icon
+ * Add slic3r app icon
+ * Add gnome PasswordSafe app icon
+ * Add qrshare app icon
+ * Add azpainter app icon
+ * Add crow-translate app icon; Fixes #118
+ * Add subsurface app icon
+ * Add Alva app icon
+ * Add kde neon distribution logo
+ * Update thermal-monitor app icon
+ * Add Datovka app icon
+ * Add com.github.parnold-x.timer app icon
+ * Add jamovi app icon
+ * Add artemanufrij app icon symlink
+ * Add freedoom1 app icon
+ * Add php app icons
+ * Add burp app icon
+ * Add gnome podcast app icon
+ * Add white background to war-thunder app icon
+ * Update gramps app icon
+ * Update stack app icon
+ * Change veracrypt app icon colors
+
+[20190823]
+ * Update new Visual Studio Code icons; Fixes #119
+ * Fix rocket-league app icon KDE shadow
+ * Update lmms app icon
+ * Update typora app icon
+ * Symlink mintBackup to deja-dup
+ * Update deja-dup app icon
+ * Update stellarium app icon
+ * Update seafile app icon
+ * Update office-address-book app icon
+ * Update kipi-expoblending app icon
+ * Update kipi-dngconverter app icon
+ * Change warning icon symbol color
+
+[20190815]
+ * Update rocket-league app icon
+ * Update veracrypt app icon
+ * Update war-thunder app icon
+ * Update webby app icon
+ * Update yandex-browser-beta app icon
+ * Update nootka app icon
+ * Update vym app icon
+ * Update rawtherapee app icon
+ * Update yubi app icons
+ * Update zim app icon
+ * Add new app icon symlinks
+
+[20190719]
+ * Update and fix all status scalable icons
+
+[20190619]
+ * Symlink status bluetooth icons with apps ones; Update bluetooth-disabled app icon
+ * Resize and update battery status icons
+ * Resize and update 16px status icons
+ * Symlink status avatar icon with apps avatar icon
+ * Fix kde shadows and update status volume icons
+ * Separate 512px and 16px status icons
+ * Optimize ac-adapter icon
+ * Symlink status ac-adapter with apps ac-adapter icon
+ * Fix kde shadows airplane-mode status icon
+ * Update staruml app icon
+ * Add abrowser app icon
+ * Add 4diac-ide app icon
+ * Add multiple doom app icons
+ * Add oomox app icon
+ * Add akira app icon
+ * Change mail colors again
+
+[20190611]
+ * Fix app menu uses actions icons for apps
+ * Update panel icons; Change panel maxsize to 24px
+
+[20190603]
+ * Fix vidcutter blue icon
+ * Fix video app icon looks blue for some distros
+ * Move tweak app icons' symlinks to preferences-desktop-tweaks.svg
+ * Fix touchpad icon KDE shadows
+ * Symlink krunner.svg to system-run.svg
+ * Update plasma-search app icon
+ * Symlink preferences-desktop-plasma.svg and plasma.svg app icons
+ * Update preferences-desktop-plasma app icons
+ * Fix index.theme names
+ * Add org.gnome.IconPreview.Palette.svg app icon
+
+[20190525]
+ * Add zoom app icons
+ * Fix payday2 app icon shadows for KDE
+ * Update supertuxkart app icon
+ * Update tuxguitar app icon
+ * Add UberWriter app icon
+ * Add ephemeral app icon
+ * Add com.github.cassidyjames.palette app icon symlink
+ * Add brave-browser-dev and brave-browser-nightly app icons
+ * Add github-desktop app icons
+ * Add colorpicker.svg app icon symlink
+ * Add appimagekit-colorpicker.svg app icon symlink
+ * Add makefile CHANGELOG autogeneration function
+ * Update ksnakeduel app icon
+ * Update opera-developer app icon
+ * Update nvim app icon
+ * Update marble app icon
+ * Update maxthon app icon
+ * Update supermeatboy app icon
+ * Update notepadqq app icon
+ * Update metro redux app icon
+ * Update mono app icon
+ * Change mail icons colors
+
+[20190503]
+ * Add some color to mail icon @charlesg99 :wink:
+ * Fix mimetype icon shadows for KDE
+ * Add new mimetypes symlinks
+

@@ -78,6 +78,8 @@ plugins=(
     python
     pip
     archlinux
+    zsh-vi-mode
+    fzf
 )
 
 
@@ -129,13 +131,12 @@ typeset -U fpath=("$SIMPL_ZSH_DIR/"{completion,themes} $fpath)
 # initialize the prompt
 autoload -U promptinit && promptinit
 
-source $ZSH/oh-my-zsh.sh > /dev/null
 # source shell configuration files
 for f in "$SIMPL_ZSH_DIR"/{settings,plugins}/*?.zsh; do
-    . "$f" 2>/dev/null
+    source "$f" 2>/dev/null
 done
 for f in "$SIMPL_ZSH_DIR"/{settings,plugins}/*/*?.zsh; do
-    . "$f" 2>/dev/null
+    source "$f" 2>/dev/null
 done
 
 # Preserve MANPATH if you already defined it somewhere in your config.
@@ -301,7 +302,7 @@ esac
 # Plugin source helper
 _source_plugin() {
 	local plugin_name="$1"
-	for basedir in /usr/share/zsh/plugins /usr/share
+	for basedir in /usr/share/zsh/plugins /usr/share $HOME/.zsh/plugins $HOME/
 	do
 		plugin="$basedir/$plugin_name/$plugin_name.zsh"
 		[ -f "$plugin" ] && source "$plugin" && return 0
@@ -360,78 +361,41 @@ then
 	ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
 fi
 
-unset -f _source_plugin
+autoload -Uz +X compinit && compinit
+autoload -Uz +X bashcompinit && bashcompinit
 
-lazygit() {
-	USAGE="
-lazygit [OPTION]... <msg>
+zstyle ':completion::complete:*' gain-privileges 1
+zstyle ':completion:*' menu select
+zstyle :compinstall filename "$HOME/.zshrc"
+zstyle ':completion:*' rehash true
+setopt COMPLETE_ALIASES
 
-    GIT but lazy
+ZSH_CACHE_DIR=$HOME/.oh-my-zsh/cache
+if [[ ! -d $ZSH_CACHE_DIR ]]; then
+  mkdir $ZSH_CACHE_DIR
+fi
 
-    Options:
-        --fixup <commit>        runs 'git commit --fixup <commit> [...]'
-        --amend                 runs 'git commit --amend --no-edit [...]'
-        -f, --force             runs 'git push --force-with-lease [...]'
-        -h, --help              show this help text
-"
-	while [ $# -gt 0 ]
-	do
-		key="$1"
 
-		case $key in
-			--fixup)
-				COMMIT="$2"
-				shift # past argument
-				shift # past value
-				;;
-			--amend)
-				AMEND=true
-				shift # past argument
-				;;
-			-f|--force)
-				FORCE=true
-				shift # past argument
-				;;
-			-h|--help)
-				echo "$USAGE"
-				EXIT=true
-				break
-				;;
-			*)
-				MESSAGE="$1"
-				shift # past argument
-				;;
-		esac
-	done
-	unset key
-	if [ -z "$EXIT" ]
-	then
-		git status .
-		git add .
-		if [ -n "$AMEND" ]
-		then
-			git commit --amend --no-edit
-		elif [ -n "$COMMIT" ]
-		then
-			git commit --fixup "$COMMIT"
-			GIT_SEQUENCE_EDITOR=: git rebase -i --autosquash "$COMMIT"^
-		else
-			git commit -m "$MESSAGE"
-		fi
-		git push origin HEAD $([ -n "$FORCE" ] && echo '--force-with-lease')
-	fi
-	unset USAGE COMMIT MESSAGE AMEND FORCE
+source $ZSH/oh-my-zsh.sh > /dev/null 2> /dev/null
+
+alias y=youtube-dl
+alias dc=docker-compose
+alias clip="xclip && xsel"
+alias paste="xsel"
+export ANDROID_HOME=/opt/android-sdk
+export ANDROID_SDK_ROOT=/opt/android-sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+
+. $HOME/.fzf.zsh > /dev/null 2> /dev/null
+
+# zsh parameter completion for the dotnet CLI
+_dotnet_zsh_complete()
+{
+  local completions=("$(dotnet complete "$words")")
+
+  reply=( "${(ps:\n:)completions}" )
 }
 
-find() {
-	if [ $# = 1 ]
-	then
-		command find . -iname "*$@*"
-	else
-		command find "$@"
-	fi
-}
-
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-alias clip="clipcopy"
+compctl -K _dotnet_zsh_complete dotnet
+export PATH=$PATH:$DOTNET_ROOT
