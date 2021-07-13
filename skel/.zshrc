@@ -80,6 +80,7 @@ plugins=(
     archlinux
     zsh-vi-mode
     fzf
+    zsh-autosuggestions
 )
 
 
@@ -312,7 +313,7 @@ _source_plugin() {
 }
 
 # ZSH Autosuggestions
-_source_plugin zsh-autosuggestions && ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#999'
 
 # ZSH Syntax Highlighting
 if _source_plugin zsh-syntax-highlighting
@@ -380,7 +381,7 @@ source $ZSH/oh-my-zsh.sh > /dev/null 2> /dev/null
 
 alias y=youtube-dl
 alias dc=docker-compose
-alias clip="xclip && xsel"
+alias clip="xclip"
 alias paste="xsel"
 export ANDROID_HOME=/opt/android-sdk
 export ANDROID_SDK_ROOT=/opt/android-sdk

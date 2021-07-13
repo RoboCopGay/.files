@@ -2,6 +2,7 @@
     email = pl4nk1ton@gmail.com
 	name = Yaks Souza
     editor = nvim
+	signingkey = 68590DB9E8390F67
 [alias]
     cm = commit -m
     fcm = commit --amend -m
@@ -18,6 +19,8 @@
 [url "git@github.com:"]
     insteadOf = https://github.com/
 [url "git@github.com:"]
-    insteadOf = https//github.com/
+    insteadOf = http://github.com/
+[url "https://github.com"]
+    insteadOf = .https://github.com
 [init]
 	defaultBranch = root

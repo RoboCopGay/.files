@@ -314,7 +314,6 @@ set ignorecase
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.config/nvim/plugged')
-Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 
 Plug 'sheerun/vim-polyglot'

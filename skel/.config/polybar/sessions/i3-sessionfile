@@ -4,6 +4,6 @@
 # To load session at startup use the following line
 # sleep 1; al-polybar-session &
 
-/home/robocopgay/.config/polybar/config i3-bar
-/home/robocopgay/.config/polybar/config i3-bar-hdmi
-# /home/robocopgay/.config/polybar/config i3-bar-without-hdmi
+/home/plankiton/.config/polybar/config i3-bar
+/home/plankiton/.config/polybar/config i3-bar-hdmi
+# /home/plankiton/.config/polybar/config i3-bar-without-hdmi

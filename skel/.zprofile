@@ -16,3 +16,4 @@ xset dpms 600 900 1200
 xset r rate 350 60
 
 export QT_QPA_PLATFORMTHEME=qt5ct
+export GPG_TTY=$(tty)

@@ -1,9 +1,9 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhistcnt =7
-let g:netrw_dirhist_7='/home/robocopgay/Create/Projects/githubPage/contact'
-let g:netrw_dirhist_6='/home/robocopgay/Create/Projects/githubPage/projects'
-let g:netrw_dirhist_5='/home/robocopgay/Create/Projects/githubPage/contact'
-let g:netrw_dirhist_4='/home/robocopgay/Create/Projects/githubPage'
-let g:netrw_dirhist_3='/home/robocopgay/Create/Projects/githubPage/info'
-let g:netrw_dirhist_2='/home/robocopgay/Create/Projects/githubPage/api'
-let g:netrw_dirhist_1='/home/robocopgay/.config/polybar/sessions'
+let g:netrw_dirhist_7='/home/plankiton/Create/Projects/githubPage/contact'
+let g:netrw_dirhist_6='/home/plankiton/Create/Projects/githubPage/projects'
+let g:netrw_dirhist_5='/home/plankiton/Create/Projects/githubPage/contact'
+let g:netrw_dirhist_4='/home/plankiton/Create/Projects/githubPage'
+let g:netrw_dirhist_3='/home/plankiton/Create/Projects/githubPage/info'
+let g:netrw_dirhist_2='/home/plankiton/Create/Projects/githubPage/api'
+let g:netrw_dirhist_1='/home/plankiton/.config/polybar/sessions'
